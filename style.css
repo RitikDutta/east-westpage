@@ -1,19 +1,51 @@
 body {
   font-family: "PT Sans Narrow", sans-serif;
+  margin: 0; /* Reset default body margin */
+  padding: 0; /* Reset default body padding */
 }
 
+/* Restaurant Logo and Details Styling */
+.restaurant-details {
+  background-color: #4C73A1; /* Adjust background color as needed */
+  color: #FFFFFF;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.restaurant-logo {
+  max-width: 150px; /* Adjust the logo size as needed */
+  height: auto;
+  margin-right: 20px; /* Add spacing between logo and text */
+}
+
+.restaurant-info {
+  text-align: left;
+}
+
+.restaurant-info h1 {
+  font-size: 2rem; /* Adjust the heading font size */
+  margin: 0;
+}
+
+.restaurant-info p {
+  font-size: 1.2rem; /* Adjust the tagline font size */
+  margin: 0;
+}
+
+/* Snap Scrolling Section Styling (unchanged) */
 .c-scroll-snap {
   max-height: 100vh;
   overflow-y: scroll;
 }
-.c-scroll-snap--y-proximity {
-  scroll-snap-type: y proximity;
-  scroll-snap-points-y: repeat(100vh);
-}
+
 .c-scroll-snap--y-mandatory {
   scroll-snap-type: y mandatory;
   scroll-snap-points-y: repeat(100vh);
 }
+
 .c-scroll-snap > * {
   height: 100vh;
   scroll-snap-align: start;
@@ -22,26 +54,17 @@ body {
 .sections {
   counter-reset: section;
 }
-.sections:after {
-  display: block;
-  content: " / " counter(section);
-  position: absolute;
-  top: 50%;
-  right: 10px;
-  color: white;
-}
+
+
 
 section {
   color: white;
   counter-increment: section;
   position: relative;
 }
-section:before {
-  content: counter(section);
-  position: absolute;
-  top: 50%;
-  right: 30px;
-}
+
+
+
 section h1 {
   position: absolute;
   top: 50%;
@@ -49,4 +72,32 @@ section h1 {
   font-size: 5vw;
   letter-spacing: 2px;
   transform: translate(-50%, -50%);
+}
+
+
+
+
+/* Image Styles */
+.image-container {
+    text-align: center; /* Center-align the image */
+}
+
+.image-container img {
+    display: block; /* Remove extra space below the image */
+    max-width: 100%; /* Make the image responsive */
+    height: auto; /* Preserve aspect ratio */
+    filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.1)); /* Apply shadow to the transparent areas */
+}
+
+@font-face {
+    font-family: 'CustomFont';
+    src: url('font1.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.restaurant-heading {
+    font-family: 'CustomFont', sans-serif; /* Use the custom font */
+    font-size: 4rem; /* Adjust the font size */
+    margin: 175px 0; /* Add spacing below the image */
 }
