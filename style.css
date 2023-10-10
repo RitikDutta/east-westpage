@@ -99,16 +99,17 @@ section h1 {
 .restaurant-heading {
     font-family: 'CustomFont', sans-serif; /* Use the custom font */
     font-size: 4rem; /* Adjust the font size */
-    margin: 275px 0; /* Add spacing below the image */
-    color: #333; /* Set the text color */
+    position: relative;
+    margin: 340px 0; /* Add spacing below the image */
+    color: #E29430; /* Set the text color */
 }
 
 /* Tagline Styles */
 .tagline {
     font-family: 'CustomFont', sans-serif; /* Use the custom font */
     font-size: 1.2rem; /* Adjust the font size */
-    margin: 370px 0; /* Add spacing below the heading */
-    color: #666; /* Set the text color */
+    margin: 360px 0; /* Add spacing below the heading */
+    color: #E29430; /* Set the text color */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Apply shadow to the text */
     letter-spacing: 1px; /* Add letter spacing for better readability */
 }
