@@ -76,19 +76,6 @@ section h1 {
 
 
 
-
-/* Image Styles */
-.image-container {
-    text-align: center; /* Center-align the image */
-}
-
-.image-container img {
-    display: block; /* Remove extra space below the image */
-    max-width: 100%; /* Make the image responsive */
-    height: auto; /* Preserve aspect ratio */
-    filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.1)); /* Apply shadow to the transparent areas */
-}
-
 @font-face {
     font-family: 'CustomFont';
     src: url('font1.ttf') format('truetype');
@@ -96,20 +83,44 @@ section h1 {
     font-style: normal;
 }
 
-.restaurant-heading {
-    font-family: 'CustomFont', sans-serif; /* Use the custom font */
-    font-size: 4rem; /* Adjust the font size */
-    position: relative;
-    margin: 340px 0; /* Add spacing below the image */
-    color: #E29430; /* Set the text color */
+/* Reset some default browser styles */
+body, h1, p {
+    margin: 0;
+    padding: 0;
 }
 
-/* Tagline Styles */
-.tagline {
-    font-family: 'CustomFont', sans-serif; /* Use the custom font */
-    font-size: 1.2rem; /* Adjust the font size */
-    margin: 360px 0; /* Add spacing below the heading */
+/* Center the logo and text vertically and horizontally */
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Style for the logo image */
+.restaurant-logo {
+    max-width: 100%; /* Make the image responsive */
+    height: auto; /* Preserve aspect ratio */
+    margin-bottom: 10px; /* Add spacing below the logo */
+}
+
+/* Style for the restaurant name (heading) */
+.restaurant-name {
+    font-family: 'CustomFont', sans-serif; /* Use a custom font if needed */
+    font-size: 2rem; /* Adjust the font size */
     color: #E29430; /* Set the text color */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Apply shadow to the text */
-    letter-spacing: 1px; /* Add letter spacing for better readability */
+    margin-bottom: 10px; /* Add spacing below the heading */
+    text-align: center; /* Center-align the text */
+    top: 80%;
+}
+
+/* Style for the tagline */
+.tagline {
+    font-family: 'CustomFont', sans-serif; /* Use a custom font if needed */
+    font-size: 1.2rem; /* Adjust the font size */
+    color: #E29430; /* Set the text color */
+    text-align: center; /* Center-align the text */
+    position: absolute;
+    top: 86%;
 }
