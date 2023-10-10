@@ -1,0 +1,140 @@
+/* Updated styles.css */
+
+/* Reset some default browser styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #F6F7F8;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #4C73A1;
+    color: #FFFFFF;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    padding: 20px 0;
+    text-align: center;
+}
+
+.logo img {
+    max-width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+
+@font-face {
+    font-family: 'CustomFont';
+    src: url('font1.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.large-heading {
+    font-family: 'CustomFont', sans-serif; /* Use the custom font for headings */
+    font-size: 3rem;
+    margin: 20px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.sub-heading {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Contact Section */
+.contact-section {
+    background-color: #E29430;
+    padding: 20px;
+    color: #D23222;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.address p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.address a {
+    color: #22AEA1;
+    text-decoration: none;
+}
+
+.address a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Form Section */
+.contact-form-section {
+    background-color: #FFFFFF;
+    padding: 40px;
+    color: #333333;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    border-radius: 10px;
+}
+
+.contact-form-section h2 {
+    font-family: 'CustomFont', sans-serif; /* Use the custom font for this heading */
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#contact-form {
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #E0E0E0;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button[type="submit"] {
+    background-color: #4C73A1;
+    color: #FFFFFF;
+    padding: 14px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #2B4E88;
+}
