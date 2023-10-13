@@ -477,3 +477,17 @@
     padding-right: 0;
     border-right: none;
 }
+
+
+
+.custom_flex{
+    display: flex; 
+    flex-direction: row; 
+    text-align: center; 
+    width: 140px; 
+    align-items: center;
+}
+.text-body{
+    fill: orange;
+    width: 30%;
+}
