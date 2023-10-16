@@ -1,4 +1,16 @@
 
+
+@font-face {
+    font-family: 'Quincy';
+    src: url('quincy.otf') format('opentype');
+}
+
+.primary-font {
+    font-family: 'Quincy', sans-serif; /* Use your custom font with a fallback font */
+}
+
+
+
 .ff-secondary {
     font-family: 'Pacifico', cursive;
 }
@@ -10,6 +22,7 @@
 .fw-semi-bold {
     font-weight: 700 !important;
 }
+
 
 
 /*** Spinner ***/
@@ -38,6 +51,7 @@
 .btn.btn-primary,
 .btn.btn-secondary {
     color: #FFFFFF;
+    background-color: #E29430;
 }
 
 .btn-square {
