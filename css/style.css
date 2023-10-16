@@ -457,13 +457,15 @@
 }
 
 .footer .copyright {
+    color: #ffffff00;
+    display: table-column;
     padding: 25px 0;
     font-size: 15px;
     border-top: 1px solid rgba(256, 256, 256, .1);
 }
 
 .footer .copyright a {
-    color: var(--light);
+    color: #ffffff00;
 }
 
 .footer .footer-menu a {
