@@ -1,18 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
-
-@font-face {
-    font-family: 'Quincy';
-    src: url('quincy.otf') format('opentype');
+.primary-font-q {
+    font-family: 'Playfair Display', serif;
 }
 
-.primary-font {
-    font-family: 'Quincy', sans-serif; /* Use your custom font with a fallback font */
+.primary-font-j {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.primary-font-g {
+    font-family: 'Great Vibes', cursive;
 }
 
 
 
 .ff-secondary {
     font-family: 'Pacifico', cursive;
+    font-weight: 100px;
 }
 
 .fw-medium {
