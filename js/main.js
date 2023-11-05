@@ -117,3 +117,52 @@
     
 })(jQuery);
 
+
+
+
+
+
+
+
+
+// reservation
+
+document.addEventListener("DOMContentLoaded", function() {
+  var form = document.querySelector('form');
+  form.onsubmit = function(e) {
+    e.preventDefault();
+
+    // Validation
+    if(!form.checkValidity()) {
+      form.reportValidity();
+      return; // Stop the form submission if validation fails
+    }
+
+    var data = {
+      'name': document.getElementById('name').value,
+      'phone': document.getElementById('phone').value, // Get the phone number value
+      'datetime': document.getElementById('datetime').value,
+      'people': document.getElementById('select1').value,
+      'message': document.getElementById('message').value,
+    };
+
+    fetch('https://script.google.com/macros/s/AKfycbzh_S99r-_zkfnFlC10oNRBWJzuC8Is5nKwZKnkDj71lzIlzncXjgaxLNWzis2vx0QQ/exec', {
+      method: 'POST',
+      mode: 'no-cors',
+      cache: 'no-cache',
+      contentType: 'application/json',
+      redirect: 'follow',
+      referrerPolicy: 'no-referrer',
+      body: JSON.stringify(data)
+    })
+    .then(response => {
+      console.log('Success:', response);
+      form.reset(); // Reset the form after submission
+      alert("Reservation submitted successfully! We will give you a confirmation call");
+    })
+    .catch(error => {
+      console.error('Error:', error);
+      alert("Error submitting reservation.");
+    });
+  };
+});

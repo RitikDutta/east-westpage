@@ -44,6 +44,30 @@ body{
     -webkit-text-size-adjust:100%;
     -webkit-tap-highlight-color:rgba(0,0,0,0)
 }
+
+
+
+  .qr_img {
+    width: 50%; /* Default width */
+  }
+
+  @media (min-width: 1500px) {
+    .qr_img {
+      width: 40%; /* Width for viewports 1500px wide or more */
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
 hr{
     margin:1rem 0;
     color:inherit;
@@ -486,7 +510,7 @@ progress{
 }
 @media (min-width: 1400px){
     .container,.container-sm,.container-md,.container-lg,.container-xl,.container-xxl{
-        max-width:1320px
+        max-width:1620px
     }
 }
 .row{
