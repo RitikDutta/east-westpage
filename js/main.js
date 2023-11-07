@@ -187,7 +187,7 @@ document.addEventListener('DOMContentLoaded', function() {
     emailBody += "Message: " + message + "%0A";
     
     // Construct the mailto link
-    var mailtoLink = "mailto:ritikduttagd@gmail.com"; // Replace with your email address
+    var mailtoLink = "mailto:eastwestrestaurantsharjah@gmail.com"; // Replace with your email address
     mailtoLink += "?subject=" + encodeURIComponent(subject);
     mailtoLink += "&body=" + emailBody;
     
