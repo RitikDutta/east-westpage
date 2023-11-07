@@ -14,9 +14,7 @@
     font-family: 'Great Vibes', cursive;
 }
 
-h1{
-    font-family: 'Playfair Display', serif;
-}
+
 
 .ff-secondary {
     font-family: 'Pacifico', cursive;
@@ -88,14 +86,6 @@ h1{
     border-radius: 2px;
 }
 
-.checkout_btn{
-    width: initial;
-    transition: transform 0.3s ease !important;
-}
-.checkout_btn:hover{
-    transform: scale(0.95) !important;
-}
-
 
 /*** Navbar ***/
 .navbar-dark .navbar-nav .nav-link {
@@ -103,19 +93,11 @@ h1{
     margin-left: 25px;
     padding: 35px 0;
     font-size: 15px;
-/*    color: var(--light) !important;*/
+    color: var(--light) !important;
     text-transform: uppercase;
     font-weight: 500;
     outline: none;
-    color: #E29430;
-    transition: .9s;
-}
-.selected{
-    color: white !important;
-}
-
-.navbar-nav:hover{
-    color: white;
+    transition: .5s;
 }
 
 .sticky-top.navbar-dark .navbar-nav .nav-link {
@@ -125,35 +107,24 @@ h1{
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link.active {
     color: var(--primary) !important;
-
 }
 
 .navbar-dark .navbar-brand img {
     max-height: 60px;
     transition: .5s;
-
 }
 
 .sticky-top.navbar-dark .navbar-brand img {
     max-height: 45px;
 }
-.navbar_bg{
-    background-color: transparent;
-}
 
 @media (max-width: 991.98px) {
-    .navbar_bg{
-        background-color: #854079;
-    }
     .sticky-top.navbar-dark {
         position: relative;
-        background-color: #854079;
-
     }
 
     .navbar-dark .navbar-collapse {
         margin-top: 15px;
-
         border-top: 1px solid rgba(255, 255, 255, .1)
     }
 
@@ -175,13 +146,12 @@ h1{
         top: 0;
         left: 0;
         z-index: 999;
-/*        background: transparent !important;*/
+        background: transparent !important;
     }
     
     .sticky-top.navbar-dark {
         position: fixed;
-/*        background: var(--dark) !important;*/
-        background-color: #854079;
+        background: var(--dark) !important;
     }
 }
 
@@ -237,7 +207,6 @@ h1{
     background: var(--primary);
 }
 
-
 .section-title.text-start::before,
 .section-title.text-end::after {
     display: none;
@@ -267,7 +236,6 @@ h1{
 .nav-pills .nav-item .active {
     border-bottom: 2px solid var(--primary);
 }
-
 
 
 
