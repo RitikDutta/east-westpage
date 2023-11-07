@@ -166,3 +166,33 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   };
 });
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  var contactForm = document.getElementById('contactForm');
+
+  contactForm.addEventListener('submit', function(e) {
+    e.preventDefault(); // Stop the form from submitting normally
+    
+    // Capture the form data
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var subject = document.getElementById('subject').value;
+    var message = document.getElementById('message').value;
+    
+    // Construct the email body
+    var emailBody = "Name: " + name + "%0A";
+    emailBody += "Email: " + email + "%0A";
+    emailBody += "Subject: " + subject + "%0A";
+    emailBody += "Message: " + message + "%0A";
+    
+    // Construct the mailto link
+    var mailtoLink = "mailto:ritikduttagd@gmail.com"; // Replace with your email address
+    mailtoLink += "?subject=" + encodeURIComponent(subject);
+    mailtoLink += "&body=" + emailBody;
+    
+    // Open the mailto link in a new window/tab
+    window.open(mailtoLink, '_blank');
+  });
+});
+
